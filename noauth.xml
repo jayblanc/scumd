@@ -9,7 +9,7 @@
 				init-method="start" 
 				destroy-method="stop">
 
-		<property name="port" value="3333" />
+		<property name="port" value="4444" />
 
 		<property name="keyPairProvider">
 			<bean class="org.apache.sshd.common.keyprovider.FileKeyPairProvider">
@@ -30,7 +30,7 @@
 			<bean class="com.asolutions.scmsshd.commands.factories.GitCommandFactory">
 				<property name="configuration">
 					<props>
-						<prop key="repositoryBase">/tmp/repos</prop>
+						<prop key="repositoryBase">/var/scumd/repos</prop>
 					</props>
 				</property>
 				<property name="pathToProjectNameConverter">
